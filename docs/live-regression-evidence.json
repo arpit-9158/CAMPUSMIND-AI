@@ -1,0 +1,50 @@
+{
+  "executed_at": "2026-11-17",
+  "method": "Live HTTP POST /chat requests against the local FastAPI server and installed llama3.2:3b model",
+  "scenarios": [
+    {
+      "question": "What is the minimum attendance requirement?",
+      "tools_used": ["search_university_faq"],
+      "answer": "The retrieved sample FAQ lists at least 75% attendance in each course for end-semester exam eligibility. Synthetic sample data; confirm official policy and dates with your campus office.",
+      "sources": [{"source_id": "faq-001", "document_id": "faq-001-0", "document_title": "Sample Student Handbook 2026", "category": "Attendance", "retrieval_score": 0.6869, "distance": 0.3131}]
+    },
+    {
+      "question": "When is my DBMS class on Monday?",
+      "tools_used": ["check_timetable"],
+      "answer": "The sample timetable lists Database Management Systems (DBMS) on Monday from 09:00 to 10:00 in C-204. Synthetic sample data; confirm official policy and dates with your campus office.",
+      "tool_record": {"id": "class-001", "day": "Monday", "start_time": "09:00", "end_time": "10:00", "room": "C-204"}
+    },
+    {
+      "question": "What is my personal attendance percentage?",
+      "tools_used": [],
+      "answer": "Individual attendance records are not available in this synthetic dataset.",
+      "sources": [],
+      "tool_results": []
+    },
+    {
+      "question": "What is the attendance requirement and when is DBMS on Monday?",
+      "tools_used": ["search_university_faq", "check_timetable"],
+      "answer": "The retrieved sample FAQ lists at least 75% attendance in each course for end-semester exam eligibility. The sample timetable lists Database Management Systems (DBMS) on Monday from 09:00 to 10:00 in C-204. Synthetic sample data; confirm official policy and dates with your campus office.",
+      "sources": [{"source_id": "faq-001", "retrieval_score": 0.6869}],
+      "timetable_record_id": "class-001"
+    },
+    {
+      "question": "When is my next examination and what are the reappear rules?",
+      "tools_used": ["search_university_faq", "check_academic_calendar"],
+      "answer": "The next listed sample examination is Internal Assessment 2 on November 23, 2026. The retrieved sample FAQ says: A student who does not pass a course may register for its reappear examination during the published registration window and must pay the listed examination fee. Synthetic sample data; confirm official policy and dates with your campus office.",
+      "sources": [{"source_id": "faq-013", "retrieval_score": 0.7303}, {"source_id": "faq-014", "retrieval_score": 0.6333}],
+      "calendar_record": {"event_name": "Internal Assessment 2", "event_date": "2026-11-23", "event_type": "Examination"}
+    }
+  ],
+  "ambiguous_query": {
+    "question": "dbms attendance",
+    "tools_used": [],
+    "needs_clarification": true,
+    "answer": "Do you mean the attendance requirement for DBMS, or when the DBMS class meets?"
+  },
+  "dashboard_api_response": {
+    "GET /stats": {"faq_records": 40, "faq_chunks": 40, "vector_store": "ready", "tools": ["search_university_faq", "check_timetable", "check_academic_calendar", "generate_email_draft"], "llm": {"available": true, "model": "llama3.2:3b"}},
+    "GET /timetable": {"count": 16, "sample_data": true},
+    "GET /calendar": {"count": 12, "sample_data": true}
+  }
+}

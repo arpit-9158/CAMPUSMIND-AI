@@ -1,0 +1,14 @@
+{
+  "info": {"name": "CampusMind AI", "description": "Requests for the local CampusMind synthetic campus helpdesk API.", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key":"baseUrl","value":"http://127.0.0.1:8000"}],
+  "item": [
+    {"name":"Health","request":{"method":"GET","url":"{{baseUrl}}/health"}},
+    {"name":"LLM health","request":{"method":"GET","url":"{{baseUrl}}/health/llm"}},
+    {"name":"Chat — attendance and Monday DBMS","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"question\": \"What is the attendance requirement and when is my DBMS class on Monday?\"\n}","options":{"raw":{"language":"json"}}},"url":"{{baseUrl}}/chat"}},
+    {"name":"Monday DBMS records","request":{"method":"GET","url":{"raw":"{{baseUrl}}/timetable?day=Monday&subject=DBMS","host":["{{baseUrl}}"],"path":["timetable"],"query":[{"key":"day","value":"Monday"},{"key":"subject","value":"DBMS"}]}}},
+    {"name":"Upcoming calendar events","request":{"method":"GET","url":"{{baseUrl}}/calendar?upcoming=true"}},
+    {"name":"FAQ search","request":{"method":"GET","url":{"raw":"{{baseUrl}}/faqs/search?question=attendance%20minimum","host":["{{baseUrl}}"],"path":["faqs","search"],"query":[{"key":"question","value":"attendance minimum"}]}}},
+    {"name":"Stats","request":{"method":"GET","url":"{{baseUrl}}/stats"}},
+    {"name":"Agent activity","request":{"method":"GET","url":"{{baseUrl}}/activity"}}
+  ]
+}

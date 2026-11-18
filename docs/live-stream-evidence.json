@@ -1,0 +1,20 @@
+{
+  "http_status": 200,
+  "content_type": "text/event-stream; charset=utf-8",
+  "question": "What is the attendance requirement and when is DBMS on Monday?",
+  "tools_used": ["search_university_faq", "check_timetable"],
+  "answer": "The retrieved sample FAQ lists at least 75% attendance in each course for end-semester exam eligibility. The sample timetable lists Database Management Systems (DBMS) on Monday from 09:00 to 10:00 in C-204. Synthetic sample data; confirm official policy and dates with your campus office.",
+  "sources": [{"source_id": "faq-001", "document_title": "Sample Student Handbook 2026", "category": "Attendance", "retrieval_score": 0.6869}],
+  "event_sequence": [
+    {"event_type": "query_received", "status": "completed"},
+    {"event_type": "agent_started", "status": "completed"},
+    {"event_type": "tool_selected", "status": "completed"},
+    {"event_type": "tool_started", "tool_name": "search_university_faq", "status": "running"},
+    {"event_type": "tool_completed", "tool_name": "search_university_faq", "status": "completed", "duration_ms": 5014.11, "safe_result_summary": "Retrieved 1 FAQ passage(s)."},
+    {"event_type": "tool_started", "tool_name": "check_timetable", "status": "running"},
+    {"event_type": "tool_completed", "tool_name": "check_timetable", "status": "completed", "duration_ms": 0.89, "safe_result_summary": "Found 1 matching timetable record(s)."},
+    {"event_type": "response_generating", "status": "running"},
+    {"event_type": "response_completed", "status": "completed", "duration_ms": 32941.54}
+  ],
+  "session_lookup": {"endpoint": "GET /agent/activity/{session_id}", "status": 200, "stored_session_events": 9}
+}

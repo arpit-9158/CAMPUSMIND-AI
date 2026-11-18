@@ -1,0 +1,54 @@
+﻿{
+    "missing_class_response":  {
+                                   "answer":  "No class is scheduled on Sunday, as no matching sample timetable record was found.\n\nSources: [backend/data/timetable.json]\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                                   "tools_used":  [
+                                                      "check_timetable"
+                                                  ],
+                                   "sources":  [
+
+                                               ],
+                                   "execution_summary":  [
+                                                             {
+                                                                 "type":  "tool_started",
+                                                                 "tool":  "check_timetable",
+                                                                 "status":  "running",
+                                                                 "input":  {
+                                                                               "day":  "Sunday",
+                                                                               "subject":  null,
+                                                                               "upcoming":  false
+                                                                           }
+                                                             },
+                                                             {
+                                                                 "type":  "tool_completed",
+                                                                 "tool":  "check_timetable",
+                                                                 "status":  "completed",
+                                                                 "duration_ms":  1.01
+                                                             },
+                                                             {
+                                                                 "type":  "answer_generated",
+                                                                 "status":  "completed"
+                                                             }
+                                                         ],
+                                   "tool_results":  [
+                                                        {
+                                                            "tool":  "check_timetable",
+                                                            "input":  {
+                                                                          "day":  "Sunday",
+                                                                          "subject":  null,
+                                                                          "upcoming":  false
+                                                                      },
+                                                            "data":  {
+                                                                         "found":  false,
+                                                                         "records":  [
+
+                                                                                     ],
+                                                                         "next_occurrence":  null,
+                                                                         "message":  "No matching sample timetable record was found."
+                                                                     }
+                                                        }
+                                                    ],
+                                   "session_id":  "1f991b52-e938-4c7a-8537-5672d2c5e20f"
+                               },
+    "blank_question_status":  422,
+    "blank_question_body":  "{\"detail\":[{\"type\":\"value_error\",\"loc\":[\"body\",\"question\"],\"msg\":\"Value error, Question cannot be blank\",\"input\":\"   \",\"ctx\":{\"error\":{}}}]}"
+}

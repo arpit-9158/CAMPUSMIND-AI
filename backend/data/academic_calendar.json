@@ -1,0 +1,17 @@
+{
+  "notice": "All dates below are synthetic sample data for the 2026-27 academic year and are not official university dates.",
+  "events": [
+    {"event_name":"Semester V classes begin","event_date":"2026-08-03","event_type":"Academic","description":"First day of instruction for the sample autumn semester.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Add-drop period closes","event_date":"2026-08-14","event_type":"Registration","description":"Last day to make approved course changes in the sample calendar.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Internal Assessment 1","event_date":"2026-09-14","event_type":"Examination","description":"Sample first internal assessment window begins.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Mid-semester break","event_date":"2026-10-19","event_type":"Holiday","description":"Sample mid-semester break begins.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Internal Assessment 2","event_date":"2026-11-23","event_type":"Examination","description":"Sample second internal assessment window begins.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"End-semester examinations begin","event_date":"2026-12-14","event_type":"Examination","description":"Sample end-semester examination period begins.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"End-semester examinations end","event_date":"2026-12-28","event_type":"Examination","description":"Last day of the sample end-semester examination period.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Winter recess begins","event_date":"2026-12-30","event_type":"Holiday","description":"Sample winter recess begins after examinations.","semester":"2026-27 Semester V","sample_data":true},
+    {"event_name":"Semester VI classes begin","event_date":"2027-01-18","event_type":"Academic","description":"First day of instruction for the sample spring semester.","semester":"2026-27 Semester VI","sample_data":true},
+    {"event_name":"Reappear examination registration opens","event_date":"2027-01-20","event_type":"Registration","description":"Sample registration window for reappear examinations opens.","semester":"2026-27 Semester VI","sample_data":true},
+    {"event_name":"Spring break","event_date":"2027-03-15","event_type":"Holiday","description":"Sample spring break begins.","semester":"2026-27 Semester VI","sample_data":true},
+    {"event_name":"End-semester examinations begin","event_date":"2027-05-10","event_type":"Examination","description":"Sample end-semester examination period begins.","semester":"2026-27 Semester VI","sample_data":true}
+  ]
+}

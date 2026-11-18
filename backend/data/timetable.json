@@ -1,0 +1,21 @@
+{
+  "notice": "Synthetic sample timetable for demonstration only; it is not an official university schedule.",
+  "classes": [
+    {"id":"class-001","day":"Monday","subject":"Database Management Systems (DBMS)","faculty":"Dr. Ananya Rao","start_time":"09:00","end_time":"10:00","room":"C-204","classroom":"C-204","section":"A","semester":"5","sample_data":true},
+    {"id":"class-002","day":"Monday","subject":"Computer Networks","faculty":"Prof. Kabir Shah","start_time":"10:15","end_time":"11:15","room":"C-204","classroom":"C-204","section":"A","semester":"5","sample_data":true},
+    {"id":"class-003","day":"Monday","subject":"Software Engineering","faculty":"Dr. Meera Iyer","start_time":"11:30","end_time":"12:30","room":"C-203","classroom":"C-203","section":"A","semester":"5","sample_data":true},
+    {"id":"class-004","day":"Monday","subject":"Operating Systems","faculty":"Prof. Arjun Sen","start_time":"13:30","end_time":"14:30","room":"Lab-2","classroom":"Lab-2","section":"A","semester":"5","sample_data":true},
+    {"id":"class-005","day":"Tuesday","subject":"Artificial Intelligence (AI)","faculty":"Dr. Kavita Nair","start_time":"09:00","end_time":"10:30","room":"AI-Lab","classroom":"AI-Lab","section":"A","semester":"5","sample_data":true},
+    {"id":"class-006","day":"Tuesday","subject":"Database Management Systems (DBMS)","faculty":"Dr. Ananya Rao","start_time":"10:45","end_time":"11:45","room":"C-204","classroom":"C-204","section":"A","semester":"5","sample_data":true},
+    {"id":"class-007","day":"Tuesday","subject":"Computer Networks","faculty":"Prof. Kabir Shah","start_time":"12:00","end_time":"13:00","room":"C-205","classroom":"C-205","section":"A","semester":"5","sample_data":true},
+    {"id":"class-008","day":"Wednesday","subject":"Operating Systems","faculty":"Prof. Arjun Sen","start_time":"09:00","end_time":"10:00","room":"C-203","classroom":"C-203","section":"A","semester":"5","sample_data":true},
+    {"id":"class-009","day":"Wednesday","subject":"Artificial Intelligence (AI)","faculty":"Dr. Kavita Nair","start_time":"10:15","end_time":"11:45","room":"AI-Lab","classroom":"AI-Lab","section":"A","semester":"5","sample_data":true},
+    {"id":"class-010","day":"Wednesday","subject":"Database Management Systems (DBMS)","faculty":"Dr. Ananya Rao","start_time":"12:00","end_time":"13:00","room":"C-204","classroom":"C-204","section":"A","semester":"5","sample_data":true},
+    {"id":"class-011","day":"Thursday","subject":"Software Engineering","faculty":"Dr. Meera Iyer","start_time":"09:00","end_time":"10:30","room":"C-203","classroom":"C-203","section":"A","semester":"5","sample_data":true},
+    {"id":"class-012","day":"Thursday","subject":"Computer Networks","faculty":"Prof. Kabir Shah","start_time":"10:45","end_time":"11:45","room":"C-205","classroom":"C-205","section":"A","semester":"5","sample_data":true},
+    {"id":"class-013","day":"Thursday","subject":"Operating Systems","faculty":"Prof. Arjun Sen","start_time":"13:30","end_time":"14:30","room":"Lab-2","classroom":"Lab-2","section":"A","semester":"5","sample_data":true},
+    {"id":"class-014","day":"Friday","subject":"Database Management Systems (DBMS)","faculty":"Dr. Ananya Rao","start_time":"09:00","end_time":"10:00","room":"C-204","classroom":"C-204","section":"A","semester":"5","sample_data":true},
+    {"id":"class-015","day":"Friday","subject":"Artificial Intelligence (AI)","faculty":"Dr. Kavita Nair","start_time":"10:15","end_time":"11:45","room":"AI-Lab","classroom":"AI-Lab","section":"A","semester":"5","sample_data":true},
+    {"id":"class-016","day":"Friday","subject":"Software Engineering","faculty":"Dr. Meera Iyer","start_time":"12:00","end_time":"13:00","room":"C-203","classroom":"C-203","section":"A","semester":"5","sample_data":true}
+  ]
+}

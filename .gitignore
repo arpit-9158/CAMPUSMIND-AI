@@ -1,0 +1,65 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/chroma_db/
+backend/.cache/
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Databases and local vector stores
+chroma_db/
+.chroma/
+vector_store/
+*.sqlite
+*.sqlite3
+*.db
+
+# Private recordings
+storage/voice_recordings/
+voice_recordings/
+
+# Model weights and large model files
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/

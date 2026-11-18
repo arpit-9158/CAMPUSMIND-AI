@@ -1,0 +1,564 @@
+﻿[
+    {
+        "scenario":  1,
+        "question":  "What is the attendance requirement and when is my DBMS class on Monday?",
+        "response":  {
+                         "answer":  "The attendance requirement is at least 75 percent. Your DBMS class on Monday is scheduled from 09:00 to 10:00 in room C-204.\n\nSources: [Sample Student Handbook 2026]; [backend/data/timetable.json]\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                         "tools_used":  [
+                                            "search_university_faq",
+                                            "check_timetable"
+                                        ],
+                         "sources":  [
+                                         {
+                                             "source":  "Sample Student Handbook 2026",
+                                             "category":  "Attendance",
+                                             "faq_id":  "faq-001",
+                                             "relevance":  0.6869
+                                         }
+                                     ],
+                         "execution_summary":  [
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "question":  "minimum attendance requirement"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "completed",
+                                                       "duration_ms":  4382.33
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "day":  "Monday",
+                                                                     "subject":  "DBMS",
+                                                                     "upcoming":  false
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "completed",
+                                                       "duration_ms":  0.64
+                                                   },
+                                                   {
+                                                       "type":  "answer_generated",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                         "tool_results":  [
+                                              {
+                                                  "tool":  "search_university_faq",
+                                                  "input":  {
+                                                                "question":  "minimum attendance requirement"
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "results":  [
+                                                                               {
+                                                                                   "text":  "Question: What is the minimum attendance requirement?\nAnswer: The sample academic policy requires students to maintain at least 75 percent attendance in each course to be eligible for end-semester examinations.",
+                                                                                   "source":  "Sample Student Handbook 2026",
+                                                                                   "category":  "Attendance",
+                                                                                   "faq_id":  "faq-001",
+                                                                                   "last_updated":  "2026-08-01",
+                                                                                   "relevance":  0.6869
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "check_timetable",
+                                                  "input":  {
+                                                                "day":  "Monday",
+                                                                "subject":  "DBMS",
+                                                                "upcoming":  false
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "records":  [
+                                                                               {
+                                                                                   "id":  "class-001",
+                                                                                   "day":  "Monday",
+                                                                                   "subject":  "Database Management Systems (DBMS)",
+                                                                                   "faculty":  "Dr. Ananya Rao",
+                                                                                   "start_time":  "09:00",
+                                                                                   "end_time":  "10:00",
+                                                                                   "room":  "C-204",
+                                                                                   "classroom":  "C-204",
+                                                                                   "section":  "A",
+                                                                                   "semester":  "5",
+                                                                                   "sample_data":  true
+                                                                               }
+                                                                           ],
+                                                               "next_occurrence":  null,
+                                                               "message":  ""
+                                                           }
+                                              }
+                                          ],
+                         "session_id":  "6e3f6ecd-6768-4a93-8624-dfe48bfbc0bb"
+                     }
+    },
+    {
+        "scenario":  2,
+        "question":  "When is the next examination, and what are the reappear examination rules?",
+        "response":  {
+                         "answer":  "the academic calendar indicates that the sample second internal assessment window begins on 2026-11-23.\n\nThe reappear examination rules are as follows:\n\n* A student who does not pass a course may register for its reappear examination during the published registration window.\n* The examination fee must be paid.\n* The registration window is published with the examination notice, and the current dates can be confirmed on the academic calendar.\n\nFor the exact registration window dates, please refer to the examination notice or contact the examination cell.\n\nSources: [Sample Examination Rules 2026]; [backend/data/academic_calendar.json]\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                         "tools_used":  [
+                                            "search_university_faq",
+                                            "check_academic_calendar"
+                                        ],
+                         "sources":  [
+                                         {
+                                             "source":  "Sample Examination Rules 2026",
+                                             "category":  "Reappear Examinations",
+                                             "faq_id":  "faq-013",
+                                             "relevance":  0.7303
+                                         },
+                                         {
+                                             "source":  "Sample Examination Rules 2026",
+                                             "category":  "Reappear Examinations",
+                                             "faq_id":  "faq-014",
+                                             "relevance":  0.6333
+                                         }
+                                     ],
+                         "execution_summary":  [
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "question":  "reappear examination rules"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "completed",
+                                                       "duration_ms":  28.02
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "on_date":  null,
+                                                                     "event_type":  "Examination",
+                                                                     "upcoming":  true,
+                                                                     "weekday":  null
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "completed",
+                                                       "duration_ms":  1.28
+                                                   },
+                                                   {
+                                                       "type":  "answer_generated",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                         "tool_results":  [
+                                              {
+                                                  "tool":  "search_university_faq",
+                                                  "input":  {
+                                                                "question":  "reappear examination rules"
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "results":  [
+                                                                               {
+                                                                                   "text":  "Question: What are the reappear examination rules?\nAnswer: A student who does not pass a course may register for its reappear examination during the published registration window and must pay the listed examination fee.",
+                                                                                   "source":  "Sample Examination Rules 2026",
+                                                                                   "category":  "Reappear Examinations",
+                                                                                   "faq_id":  "faq-013",
+                                                                                   "last_updated":  "2026-08-01",
+                                                                                   "relevance":  0.7303
+                                                                               },
+                                                                               {
+                                                                                   "text":  "Question: When can I register for a reappear examination?\nAnswer: The examination cell publishes the registration window with the examination notice; confirm the current dates on the academic calendar.",
+                                                                                   "source":  "Sample Examination Rules 2026",
+                                                                                   "category":  "Reappear Examinations",
+                                                                                   "faq_id":  "faq-014",
+                                                                                   "last_updated":  "2026-08-01",
+                                                                                   "relevance":  0.6333
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "check_academic_calendar",
+                                                  "input":  {
+                                                                "on_date":  null,
+                                                                "event_type":  "Examination",
+                                                                "upcoming":  true,
+                                                                "weekday":  null
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "records":  [
+                                                                               {
+                                                                                   "event_name":  "Internal Assessment 2",
+                                                                                   "event_date":  "2026-11-23",
+                                                                                   "event_type":  "Examination",
+                                                                                   "description":  "Sample second internal assessment window begins.",
+                                                                                   "semester":  "2026-27 Semester V",
+                                                                                   "sample_data":  true
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              }
+                                          ],
+                         "session_id":  "b936c68c-97ef-4853-a693-b7a8e163b37e"
+                     }
+    },
+    {
+        "scenario":  3,
+        "question":  "Who should I contact for a leave application and help me draft an email to them?",
+        "response":  {
+                         "answer":  "For a leave application, you should contact the department office. You can draft an email to them as follows:\n\nSubject: Request regarding a leave application\n\nDear Department Office,\n\nI am writing to request assistance with a leave application. Please let me know the required steps and any supporting documents I should provide.\n\nThank you,\n[Your name]\n[Student ID]\n\nNote: You can fill in your name and student ID in the email body.\n\nThe sample department contact is cse.office@example.edu.\n\nSources: [Sample Student Handbook 2026]\n\nDraft only; not sent.\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                         "tools_used":  [
+                                            "search_university_faq",
+                                            "generate_email_draft"
+                                        ],
+                         "sources":  [
+                                         {
+                                             "source":  "Sample Student Handbook 2026",
+                                             "category":  "Leave",
+                                             "faq_id":  "faq-018",
+                                             "relevance":  0.6367
+                                         }
+                                     ],
+                         "execution_summary":  [
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "question":  "Who should I contact for a leave application?"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "completed",
+                                                       "duration_ms":  28.22
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "generate_email_draft",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "recipient_role":  "Department Office",
+                                                                     "subject":  "Request regarding a leave application",
+                                                                     "purpose":  "a leave application"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "generate_email_draft",
+                                                       "status":  "completed",
+                                                       "duration_ms":  0.01
+                                                   },
+                                                   {
+                                                       "type":  "answer_generated",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                         "tool_results":  [
+                                              {
+                                                  "tool":  "search_university_faq",
+                                                  "input":  {
+                                                                "question":  "Who should I contact for a leave application?"
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "results":  [
+                                                                               {
+                                                                                   "text":  "Question: Who should I contact for a leave application?\nAnswer: Submit leave applications to the department office. For the sample Computer Science department the contact is cse.office@example.edu.",
+                                                                                   "source":  "Sample Student Handbook 2026",
+                                                                                   "category":  "Leave",
+                                                                                   "faq_id":  "faq-018",
+                                                                                   "last_updated":  "2026-08-01",
+                                                                                   "relevance":  0.6367
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "generate_email_draft",
+                                                  "input":  {
+                                                                "recipient_role":  "Department Office",
+                                                                "subject":  "Request regarding a leave application",
+                                                                "purpose":  "a leave application"
+                                                            },
+                                                  "data":  {
+                                                               "label":  "Email draft â not sent",
+                                                               "recipient_role":  "Department Office",
+                                                               "subject":  "Request regarding a leave application",
+                                                               "body":  "Dear Department Office,\n\nI am writing to request assistance with a leave application. Please let me know the required steps and any supporting documents I should provide.\n\nThank you,\n[Your name]\n[Student ID]",
+                                                               "sent":  false
+                                                           }
+                                              }
+                                          ],
+                         "session_id":  "4da1aaa4-11ee-40c2-81a9-6f9d0ce99eae"
+                     }
+    },
+    {
+        "scenario":  4,
+        "question":  "Find my AI class on Tuesday and tell me whether any academic event is scheduled that day.",
+        "response":  {
+                         "answer":  "Your AI class on Tuesday is scheduled from 09:00 to 10:30 in the AI-Lab classroom.\n\nThe sample academic calendar has no events listed for Tuesday.\n\nSources: [backend/data/timetable.json]; [backend/data/academic_calendar.json]\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                         "tools_used":  [
+                                            "check_timetable",
+                                            "check_academic_calendar"
+                                        ],
+                         "sources":  [
+
+                                     ],
+                         "execution_summary":  [
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "day":  "Tuesday",
+                                                                     "subject":  "AI",
+                                                                     "upcoming":  false
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "completed",
+                                                       "duration_ms":  0.72
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "on_date":  null,
+                                                                     "event_type":  null,
+                                                                     "upcoming":  false,
+                                                                     "weekday":  "Tuesday"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "completed",
+                                                       "duration_ms":  0.71
+                                                   },
+                                                   {
+                                                       "type":  "answer_generated",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                         "tool_results":  [
+                                              {
+                                                  "tool":  "check_timetable",
+                                                  "input":  {
+                                                                "day":  "Tuesday",
+                                                                "subject":  "AI",
+                                                                "upcoming":  false
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "records":  [
+                                                                               {
+                                                                                   "id":  "class-005",
+                                                                                   "day":  "Tuesday",
+                                                                                   "subject":  "Artificial Intelligence (AI)",
+                                                                                   "faculty":  "Dr. Kavita Nair",
+                                                                                   "start_time":  "09:00",
+                                                                                   "end_time":  "10:30",
+                                                                                   "room":  "AI-Lab",
+                                                                                   "classroom":  "AI-Lab",
+                                                                                   "section":  "A",
+                                                                                   "semester":  "5",
+                                                                                   "sample_data":  true
+                                                                               }
+                                                                           ],
+                                                               "next_occurrence":  null,
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "check_academic_calendar",
+                                                  "input":  {
+                                                                "on_date":  null,
+                                                                "event_type":  null,
+                                                                "upcoming":  false,
+                                                                "weekday":  "Tuesday"
+                                                            },
+                                                  "data":  {
+                                                               "found":  false,
+                                                               "records":  [
+
+                                                                           ],
+                                                               "message":  "No matching sample academic-calendar event was found."
+                                                           }
+                                              }
+                                          ],
+                         "session_id":  "8c5da029-9d43-4de6-bdf3-c3e0183df53a"
+                     }
+    },
+    {
+        "scenario":  5,
+        "question":  "Tell me the minimum attendance requirement, my next DBMS class, and the next examination date.",
+        "response":  {
+                         "answer":  "Here are the answers to your questions:\n\n1. The minimum attendance requirement is 75 percent.\n2. Your next DBMS class is on Wednesday, 12:00-13:00, in room C-204, section A, semester 5.\n3. The next examination date is November 23, 2026, for the Internal Assessment 2 event.\n\nThe next listed Database Management Systems (DBMS) class is Wednesday, November 18, 2026, 12:00-13:00 in C-204.\n\nSources: [Sample Student Handbook 2026]; [backend/data/timetable.json]; [backend/data/academic_calendar.json]\n\nNote: This information comes from synthetic sample campus data and is not official university guidance.",
+                         "tools_used":  [
+                                            "search_university_faq",
+                                            "check_timetable",
+                                            "check_academic_calendar"
+                                        ],
+                         "sources":  [
+                                         {
+                                             "source":  "Sample Student Handbook 2026",
+                                             "category":  "Attendance",
+                                             "faq_id":  "faq-001",
+                                             "relevance":  0.6869
+                                         }
+                                     ],
+                         "execution_summary":  [
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "question":  "minimum attendance requirement"
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "search_university_faq",
+                                                       "status":  "completed",
+                                                       "duration_ms":  28.25
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "day":  null,
+                                                                     "subject":  "DBMS",
+                                                                     "upcoming":  true
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_timetable",
+                                                       "status":  "completed",
+                                                       "duration_ms":  1.15
+                                                   },
+                                                   {
+                                                       "type":  "tool_started",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "running",
+                                                       "input":  {
+                                                                     "on_date":  null,
+                                                                     "event_type":  "Examination",
+                                                                     "upcoming":  true,
+                                                                     "weekday":  null
+                                                                 }
+                                                   },
+                                                   {
+                                                       "type":  "tool_completed",
+                                                       "tool":  "check_academic_calendar",
+                                                       "status":  "completed",
+                                                       "duration_ms":  0.54
+                                                   },
+                                                   {
+                                                       "type":  "answer_generated",
+                                                       "status":  "completed"
+                                                   }
+                                               ],
+                         "tool_results":  [
+                                              {
+                                                  "tool":  "search_university_faq",
+                                                  "input":  {
+                                                                "question":  "minimum attendance requirement"
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "results":  [
+                                                                               {
+                                                                                   "text":  "Question: What is the minimum attendance requirement?\nAnswer: The sample academic policy requires students to maintain at least 75 percent attendance in each course to be eligible for end-semester examinations.",
+                                                                                   "source":  "Sample Student Handbook 2026",
+                                                                                   "category":  "Attendance",
+                                                                                   "faq_id":  "faq-001",
+                                                                                   "last_updated":  "2026-08-01",
+                                                                                   "relevance":  0.6869
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "check_timetable",
+                                                  "input":  {
+                                                                "day":  null,
+                                                                "subject":  "DBMS",
+                                                                "upcoming":  true
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "records":  [
+                                                                               {
+                                                                                   "id":  "class-010",
+                                                                                   "day":  "Wednesday",
+                                                                                   "subject":  "Database Management Systems (DBMS)",
+                                                                                   "faculty":  "Dr. Ananya Rao",
+                                                                                   "start_time":  "12:00",
+                                                                                   "end_time":  "13:00",
+                                                                                   "room":  "C-204",
+                                                                                   "classroom":  "C-204",
+                                                                                   "section":  "A",
+                                                                                   "semester":  "5",
+                                                                                   "sample_data":  true
+                                                                               }
+                                                                           ],
+                                                               "next_occurrence":  "2026-11-18",
+                                                               "message":  ""
+                                                           }
+                                              },
+                                              {
+                                                  "tool":  "check_academic_calendar",
+                                                  "input":  {
+                                                                "on_date":  null,
+                                                                "event_type":  "Examination",
+                                                                "upcoming":  true,
+                                                                "weekday":  null
+                                                            },
+                                                  "data":  {
+                                                               "found":  true,
+                                                               "records":  [
+                                                                               {
+                                                                                   "event_name":  "Internal Assessment 2",
+                                                                                   "event_date":  "2026-11-23",
+                                                                                   "event_type":  "Examination",
+                                                                                   "description":  "Sample second internal assessment window begins.",
+                                                                                   "semester":  "2026-27 Semester V",
+                                                                                   "sample_data":  true
+                                                                               }
+                                                                           ],
+                                                               "message":  ""
+                                                           }
+                                              }
+                                          ],
+                         "session_id":  "e78ae077-fd16-477d-a8a6-20887aed96d8"
+                     }
+    }
+]
